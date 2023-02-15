@@ -1,0 +1,102 @@
+/* START VARIABLES */
+:root {
+  --ale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+/* END VARIABLES */
+/* START GLOBAL RULES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Red Hat Display", sans-serif;
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  background-image: url("images/pattern-background-desktop.svg");
+  background-size: cover;
+}
+p {
+  font-size: 16px;
+}
+a {
+  text-decoration: none;
+}
+/* END GLOBAL RULES */
+.box {
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 1px 18px 25px black;
+  overflow: hidden;
+  background-color: white;
+}
+@media (max-width: 400px) {
+  .box {
+    width: 350px;
+  }
+}
+.box .main-pic svg {
+  max-width: 100%;
+}
+.box .box-content {
+  padding: 30px;
+  text-align: center;
+}
+.box .box-content h2 {
+  font-weight: 900;
+  padding: 15px 0;
+  color: var(--Dark-blue);
+}
+.box .box-content > p {
+  color: var(--Desaturated-blue);
+}
+.box .box-content .content-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--Very-pale-blue);
+  border-radius: 10px;
+  padding: 12px 16px;
+  margin: 20px 0;
+}
+.box .content-flex .first {
+  display: flex;
+  align-items: center;
+}
+.box .box-content .first svg {
+  margin-right: 17px;
+}
+.box .content-flex .first p:first-child {
+  color: var(--Dark-blue);
+  font-weight: 700;
+}
+.box .content-flex .first p:last-child {
+  color: var(--Desaturated-blue);
+}
+.box .content-flex .second a {
+  font-size: 14px;
+  text-decoration: none;
+}
+.box .content-flex .second a:hover {
+  text-decoration: underline;
+}
+.box .box-content .btn-1 {
+  padding: 8px 16px;
+  background-color: var(--Bright-blue);
+  border-radius: 10px;
+  box-shadow: 0px 15px 20px var(--ale-blue);
+  margin-bottom: 20px;
+}
+.box .box-content .btn-1 a {
+  font-weight: 700;
+  color: white;
+}
+.box .box-content .btn-2 a {
+  font-weight: 700;
+  color: var(--Desaturated-blue);
+}
